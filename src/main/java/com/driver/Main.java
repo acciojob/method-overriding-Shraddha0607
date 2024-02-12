@@ -1,6 +1,6 @@
 package com.driver;
 
-public class A{
+ class A{
     public String meth(){
         return "Invoking method from class A";
     }
@@ -8,14 +8,13 @@ public class A{
 
 
 
-    @Override
-    public class B extends A{
+
+     class B extends A{
         public String meth(){
             return "Method is overridden in Extendend class B";
         }
 }
 public class Main {
   B obj = new B();
-  String ans = obj.meth();
-  System.out.println(ans);
+  System.out.println( obj.meth());
 }
